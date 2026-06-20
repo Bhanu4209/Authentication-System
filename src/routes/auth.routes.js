@@ -22,4 +22,24 @@ authRouter.get("/get-me",authController.getMe)
  */
 authRouter.post("/refresh-token",authController.refreshToken)
 
+/**
+ * POST /api/auth/login
+ */
+authRouter.post("/login", authController.login)
+
+/**
+ * GET /api/auth/logout
+ */
+authRouter.get("/logout", authController.logout)
+
+/**
+ * GET /api/auth/logout-all
+ */
+authRouter.get("/logout-all", authController.logoutAll)
+
+/**
+ * GET /api/auth/verify-email
+ */
+authRouter.get("/verify-email", authController.verifyEmail)
+
 export default authRouter;
